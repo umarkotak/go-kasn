@@ -20,3 +20,4 @@ Aplikasi internal pegawai KASN untuk melayani tugas - tugas.
 - npm run dev
 
 # Links
+- https://github.com/jeroennoten/Laravel-AdminLTE/wiki/3.-Updating
