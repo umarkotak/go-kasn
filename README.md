@@ -17,6 +17,6 @@ Aplikasi internal pegawai KASN untuk melayani tugas - tugas.
 - php artisan adminlte:install
 - npm install --global cross-env
 - npm install --no-bin-links
-- npm run dev  
+- npm run dev
 
 # Links
