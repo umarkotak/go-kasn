@@ -17,7 +17,6 @@ class CreateSignatorTypes extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
             $table->text('name');
-            $table->text('header_type');
         });
     }
 

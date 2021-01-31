@@ -16,6 +16,8 @@ class CreateFormalMessageTypes extends Migration
         Schema::create('formal_message_types', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->text('name');
+            $table->text('header_type');
         });
     }
 

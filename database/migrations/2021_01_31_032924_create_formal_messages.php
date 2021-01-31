@@ -17,6 +17,9 @@ class CreateFormalMessages extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
             $table->text('title');
+            $table->text('description');
+            $table->text('notes');
+            $table->text('status');
             $table->bigInteger('user_id');
             $table->bigInteger('formal_message_type_id');
         });
