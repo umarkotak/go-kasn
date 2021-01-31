@@ -15,9 +15,9 @@ class ModifyUsersTableV1 extends Migration
     {
         //
         Schema::table('users', function($table) {
-            $table->string('role');
-            $table->string('position');
-            $table->string('nip');
+            $table->string('role')->default('default');
+            $table->string('position')->default('default');
+            $table->string('nip')->default('default');
         });
     }
 

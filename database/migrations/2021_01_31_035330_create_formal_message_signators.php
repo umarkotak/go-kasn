@@ -18,6 +18,12 @@ class CreateFormalMessageSignators extends Migration
             $table->timestamps();
             $table->bigInteger('formal_message_id');
             $table->bigInteger('user_id');
+            $table->text('status')->default('notified');
+            $table->text('attachment_1')->default('');
+            $table->text('attachment_2')->default('');
+            $table->text('attachment_3')->default('');
+            $table->text('attachment_4')->default('');
+            $table->text('attachment_5')->default('');
         });
     }
 
