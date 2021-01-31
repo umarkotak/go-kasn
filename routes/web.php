@@ -23,3 +23,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/user_management', 'UserManagementController@index')->name('user_management');
 Route::get('/formal_messages', 'FormalMessagesController@index')->name('formal_messages');
+Route::post('/formal_messages/create', 'FormalMessagesController@create')->name('formal_messages');
