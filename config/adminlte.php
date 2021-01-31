@@ -30,8 +30,8 @@ return [
     |
     */
 
-    'use_ico_only' => false,
-    'use_full_favicon' => true,
+    'use_ico_only' => true,
+    'use_full_favicon' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -235,14 +235,20 @@ return [
             'can'  => 'manage-blog',
         ],
         [
+            'text'        => 'home',
+            'url'         => 'home',
+            'icon'        => 'fa fa-fw fa-home',
+            'label_color' => 'success',
+        ],
+        [
             'text'        => 'dashboard',
-            'url'         => 'admin/dashboard',
+            'url'         => 'dashboard',
             'icon'        => 'fa fa-fw fa-tachometer-alt',
             'label_color' => 'success',
         ],
         [
             'text'        => 'user management',
-            'url'         => 'admin/dashboard',
+            'url'         => 'user_management',
             'icon'        => 'fa fa-fw fa-users',
             'label_color' => 'success',
             'can'         => 'role-superadmin',
