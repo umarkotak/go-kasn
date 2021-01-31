@@ -193,7 +193,7 @@ return [
     'register_url' => 'register',
     'password_reset_url' => 'password/reset',
     'password_email_url' => 'password/email',
-    'profile_url' => 'me',
+    'profile_url' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -224,11 +224,11 @@ return [
     */
 
     'menu' => [
-        [
-            'text' => 'search',
-            'search' => true,
-            'topnav' => true,
-        ],
+        // [
+        //     'text' => 'search',
+        //     'search' => true,
+        //     'topnav' => true,
+        // ],
         [
             'text' => 'blog',
             'url'  => 'admin/blog',
@@ -250,6 +250,13 @@ return [
             'text'        => 'user management',
             'url'         => 'user_management',
             'icon'        => 'fa fa-fw fa-users',
+            'label_color' => 'success',
+            'can'         => 'role-superadmin',
+        ],
+        [
+            'text'        => 'surat',
+            'url'         => 'formal_messages',
+            'icon'        => 'fa fa-fw fa-file-alt',
             'label_color' => 'success',
             'can'         => 'role-superadmin',
         ],
@@ -363,7 +370,7 @@ return [
 
     'plugins' => [
         'Datatables' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
@@ -383,7 +390,7 @@ return [
             ],
         ],
         'Select2' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
@@ -398,7 +405,7 @@ return [
             ],
         ],
         'Chartjs' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
@@ -408,7 +415,7 @@ return [
             ],
         ],
         'Sweetalert2' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
@@ -418,7 +425,7 @@ return [
             ],
         ],
         'Pace' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'css',

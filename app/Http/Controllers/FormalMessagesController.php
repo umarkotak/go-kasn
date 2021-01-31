@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
 
-class UserManagementController extends Controller
+class FormalMessagesController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -24,9 +23,7 @@ class UserManagementController extends Controller
      */
     public function index()
     {
-        $users = User::all();
-        return view('user_management', [
-            'users' => $users
+        return view('formal_messages', [
         ]);
     }
 }
